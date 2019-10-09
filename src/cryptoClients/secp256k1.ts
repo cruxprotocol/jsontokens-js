@@ -1,5 +1,5 @@
 import { ec as EC, BNInput } from 'elliptic'
-import { createHash } from 'crypto'
+const createHash = require('create-hash/browser')
 import KeyEncoder from 'key-encoder'
 import { derToJose, joseToDer } from 'ecdsa-sig-formatter'
 import { MissingParametersError } from '../errors'
